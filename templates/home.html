@@ -15,7 +15,10 @@
           {% endfor%}
         </p>
 
-        <a href="#" class="btn btn-primary">Go somewhere</a>
+        <a href="{% url 'edit_post' post.id %}" class="btn btn-primary">Edit</a>
+        <a href="{% url 'delete_post' post.id %}" class="btn btn-danger"
+          >Delete</a
+        >
       </div>
     </div>
   </div>
